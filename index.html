@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="initGame()">
+    <h1 class="neonText">Mine Sweeper</h1>
+    
+    <!-- <button class="btn safe" onclick="showSafeClick(this)"></button> -->
+    <div class="levels-area">
+        <button onclick="initGame(0)" class="btn level">Beginner</button>
+        <button onclick="initGame(1)" class="btn level">Medium</button>
+        <button onclick="initGame(2)" class="btn level">Expert</button>
+    </div>
+    <div class="life"></div>
+    <div class="container">
+        <div class="board-container"></div>
+        <div class="timer">Timer:</div>
+        <div class="credit">© Tom Belfer</div>
+    </div>
+    <script src="utils1.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

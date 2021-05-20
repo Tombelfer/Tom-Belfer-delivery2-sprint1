@@ -1,0 +1,142 @@
+body {
+    font-size: 19px;
+    font-family: "Vibur", sans-serif;
+    color: rgb(236, 9, 9);
+    background-color: black;
+} 
+.neonText {
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3.0rem;  
+    text-align: center;  
+    margin: auto;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px rgb(248, 143, 4),
+        0 0 19px rgb(255, 0, 0),
+        0 0 40px rgb(255, 145, 0),
+        0 0 80px rgb(89, 0, 255),
+        0 0 90px rgb(228, 124, 5),
+        0 0 100px rgb(255, 102, 0),
+        0 0 150px rgb(219, 7, 0);
+        
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+}
+.levels-area {
+    margin: auto;
+    border-radius: 10px;
+    width: fit-content;
+}
+.life {
+    width: 150px;
+    background-color: #556b2f87;
+    color: black;
+    margin: auto;
+    margin-top: 2px;
+    padding: 4px;
+    border-radius: 10px;
+    font-weight: 600;
+    /* display: block; */
+    animation: flicker 1.5s infinite alternate;
+}
+
+
+.container{
+    width: 450px;
+    height: 450px;
+    margin: auto;
+}
+
+table {
+    height: inherit;
+    width: inherit;
+    border: 10px solid rgb(168 66 34);
+    table-layout:fixed;
+    animation: flicker 7.5s infinite alternate;;
+    
+}
+tbody{
+    height: inherit;
+    width: inherit;
+}
+.timer{
+    color: #c61717; 
+    margin: auto;
+    display: block;
+    width: 150px;
+    /* background-color: #556b2f87; */
+    color: #c00000;
+    margin: auto;
+    margin-top: 2px;
+    padding: 1px;
+    border-radius: 10px;
+    font-weight: 600;
+    display: block;
+}
+.board-container{
+    height: inherit;
+    width: inherit;
+    /* height: 510px;
+    width: 520px; */
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgb(47 45 45 / 53%);
+    border-radius: 10px;
+}
+.btn-field {
+    background-color: #2b2222bf;
+    width:100%;
+    height: 100%;
+    transition: 0.2s;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.cell :hover{
+    background-color: rgba(0, 0, 0, 0.945);
+}
+.shown{
+    background-color: #080808bd;
+}
+.credit{
+    color: #5f756436;
+    margin: auto;
+    display: block;
+    width: 150px;
+    margin-top: 2px;
+    padding: 1px;
+    font-weight: 600;
+}
+.btn {
+    height:32px;
+    margin: 11px;
+    background-color: rgb(218 65 18);;
+    font-size: large;
+    font-family: 'Fredoka One', cursive;
+    border-radius: px;
+    cursor: pointer;
+    display: inline-blocks;
+}
+.btn:hover {
+    background-color: #494625cc;
+}
